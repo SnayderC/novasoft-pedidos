@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NovaSoft · Pedidos</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>NovaSoft</h1>
+    <p>Registro de pedidos</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Nuevo pedido</h2>
+      <label for="cliente">Cliente</label>
+      <select id="cliente"></select>
+
+      <label for="producto">Producto</label>
+      <input id="producto" type="text" placeholder="Ej. Teclado">
+
+      <label for="precio">Precio unitario</label>
+      <input id="precio" type="number" min="0" step="0.01">
+
+      <label for="cantidad">Cantidad</label>
+      <input id="cantidad" type="number" min="1" step="1" value="1">
+
+      <button id="btn-agregar" type="button">Agregar al pedido</button>
+      <p id="mensaje" role="status"></p>
+    </section>
+
+    <section>
+      <h2>Detalle</h2>
+      <ul id="lista-items"></ul>
+      <p>Total: <strong id="total">$0.00</strong></p>
+    </section>
+  </main>
+
+  <script src="js/utils.js"></script>
+  <script src="js/clientes.js"></script>
+  <script src="js/pedidos.js"></script>
+</body>
+</html>
