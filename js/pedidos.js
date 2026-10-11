@@ -4,7 +4,7 @@ const items = [];
 
 function calcularTotal(items) {
   const subtotal = items.reduce((suma, item) => suma + item.precio * item.cantidad, 0);
-  return subtotal;
+  return subtotal + 2.5;
 }
 
 function agregarItem(producto, precio, cantidad) {
