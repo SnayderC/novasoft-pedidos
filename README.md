@@ -36,4 +36,4 @@ Abrir `index.html` en el navegador. No requiere instalación.
 - Jenny Vasquez
 - Ezequiel Jaramillo
 - Julio Jimenez
-- (completar)
+- Francisco Ronquillo
